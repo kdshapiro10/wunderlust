@@ -1,5 +1,7 @@
 /* Kylie Shapiro */
 
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,11 +51,24 @@ table {
 	border-spacing: 0;
 }
 
-body {
-    background-color: linear-gradient(#55BCD5, #ffffff);
+:root { 
+	--yellow: #f6d64a;
+	--teal: #55bcd5;
+	--purple: #9b26b0;
+	--blue: #499bd2;
+	--dark-gray: #222222;
+	--light-gray: #eaeaea;
+	--white: #ffffff;
+	--black: #000000;
 }
 
-#skip a {
+
+body {
+	width: 320px;
+	margin: auto;
+}
+
+#skip {
 position:absolute;
 left:-10000px;
 top:auto;
@@ -62,8 +77,80 @@ height:1px;
 overflow:hidden;
 }
  
-#skip a:focus {
+#skip:focus {
 position:static;
 width:auto;
 height:auto;
+}
+
+header img {
+	display:block;
+	width:140px;
+	height: 55px;
+}
+header {
+	width:320px;
+	background:linear-gradient(to bottom, var(--teal),var(--white));
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+	margin-bottom: 0px;
+	grid-column: 1/3;
+}
+header p {
+	max-width: 320px;;
+	line-height: 25px;
+	margin: 20px;
+	margin-top:0px;
+	grid-column: 1/3;
+}
+
+
+h1 {
+	font-family: "Molle", sans-serif;
+	font-size: 45px;
+	margin: 20px;
+	padding: 0px;
+}
+
+h2 {
+	font-family: "Molle", sans-serif;
+	font-size: 35px;
+	margin-left: 20px;
+}
+
+
+h3 {
+	font-family: "Molle", sans-serif;
+	margin: 20px;
+}
+
+h4 {
+	font-family: "Molle", sans-serif;
+}
+
+p, q {
+	font-family: "Monsterrat", sans-serif;
+	margin-left: 20px;
+}
+
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+#intro p {
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+
+#img-grid img {
+	width: 100%;
+	margin-bottom:5px;
 }
