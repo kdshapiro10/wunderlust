@@ -32,7 +32,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-color: linear-gradient(to bottom, #55BCD5, #ffffff);
 }
 ol, ul {
 	list-style: none;
@@ -50,8 +49,11 @@ table {
 	border-spacing: 0;
 }
 
-#skip a
-{
+body {
+    background-color: linear-gradient(#55BCD5, #ffffff);
+}
+
+#skip a {
 position:absolute;
 left:-10000px;
 top:auto;
@@ -60,8 +62,7 @@ height:1px;
 overflow:hidden;
 }
  
-#skip a:focus
-{
+#skip a:focus {
 position:static;
 width:auto;
 height:auto;
