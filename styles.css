@@ -410,11 +410,15 @@ footer a {
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
 	body {
-		min-width: 1200px;
+		width: 1250px;
 	}
-
+	
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 	#plan section {
 		display: grid;
 		grid-template-columns: 1fr;
